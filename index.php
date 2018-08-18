@@ -35,7 +35,7 @@ if(isset($_POST['submit_application'])) {
     {
         // go ahead
         // validate image type and size
-        if($ext === 'jpg' && $_FILES['passport']['size'] <= (1000*1000)){
+        if($ext === 'jpg' && $_FILES['passport']['size'] <= (1000*100)){
             if(move_uploaded_file($_FILES['passport']['tmp_name'], $passport_target)){
                 $applicant->passportPath = $passport_target;
                 $passportUpload = true;   
