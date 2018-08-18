@@ -92,6 +92,9 @@ a {
 #fomContainer form{
     width:50%;
 }
+td th{
+    width:20%;
+}
         </style>
     </head>
     <body>
@@ -110,7 +113,7 @@ a {
                         while($row = mysqli_fetch_assoc($query)){
                             echo "<td>".$row['firstname']." ". $row['surname'] ."</td>
                             <td>".$row['phone']." ". $row['phone'] ."</td>
-                            <td>".$row['email']." ". $row['email'] ."</td>>";
+                            <td>".$row['email']." ". $row['email'] ."</td>";
                         }
                     ?>
                     
