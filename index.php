@@ -86,7 +86,16 @@ if(isset($_POST['submit_application'])) {
 }
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+textarea {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
